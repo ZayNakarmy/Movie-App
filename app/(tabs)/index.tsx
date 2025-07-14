@@ -34,7 +34,6 @@ export default function Index() {
         }}
       >
         <Image source={icons.logo} className="w-12 h-10 mt-20 mb-5 mx-auto" />
-
         {moviesLoading ? (
           <ActivityIndicator
             size="large"

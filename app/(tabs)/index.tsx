@@ -34,6 +34,7 @@ export default function Index() {
   return (
     <View className="flex-1 bg-primary =">
       <Image source={images.bg} className="absolute w-full z-0" />
+
       <ScrollView
         className="flex-1 px-5"
         showsVerticalScrollIndicator={false}
@@ -63,6 +64,7 @@ export default function Index() {
                 <Text className="text-lg text-white font-bold mb-3">
                   Trending Movies
                 </Text>
+
                 <FlatList
                   horizontal
                   showsHorizontalScrollIndicator={false}
@@ -72,7 +74,6 @@ export default function Index() {
                   contentContainerStyle={{ gap: 26 }}
                   renderItem={({ item, index }) => (
                     <>
-                      <Image source={item.poster_url} />
                       <TrendingCard movie={item} index={index} />
                     </>
                   )}
